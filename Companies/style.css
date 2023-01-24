@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    overflow-x:hidden;
+    overflow-y: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding:500px 0;
+}
+
+.outer-wheel{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(240, 218, 255);
+    border-radius: 50%;
+    display: grid;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.company{
+    position: absolute;
+}
+
+.amazon{
+    animation: item1 20s linear infinite;
+    width: 250px;
+}
+.apple{
+    animation: item2 20s linear infinite;
+    width: 250px;
+}
+.google{
+    animation: item3 20s linear infinite;
+    width: 250px;
+}
+.netflix{
+    animation: item4 20s linear infinite;
+    width: 250px;
+}
+.microsoft{
+    animation: item5 20s linear infinite;
+    width: 250px;
+}
+.meta{
+    animation: item6 20s linear infinite;
+    width: 250px;
+}
+
+.inner-wheel1{
+    position: absolute;
+    background-color: rgb(240, 218, 255);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.inner-wheel2{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.ola{
+    animation: item7 15s linear infinite;
+    width: 200px;
+}
+
+.linkedin{
+    animation: item8 15s linear infinite;
+    width: 200px;
+}
+
+.flipkart{
+    animation: item9 15s linear infinite;
+    width: 200px;
+}
+
+.adobe{
+    animation: item10 15s linear infinite;
+    width: 200px;
+}
+
+@keyframes item1 {
+    0% {
+        transform: rotate(0deg) translate(250px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(250px) rotate(-360deg);
+    }
+}
+
+@keyframes item2 {
+    0% {
+        transform: rotate(60deg) translate(250px) rotate(-60deg);
+    }
+    100% {
+        transform: rotate(420deg) translate(250px) rotate(-420deg);
+    }
+}
+@keyframes item3 {
+    0% {
+        transform: rotate(120deg) translate(250px) rotate(-120deg);
+    }
+    100% {
+        transform: rotate(480deg) translate(250px) rotate(-480deg);
+    }
+}
+@keyframes item4 {
+    0% {
+        transform: rotate(180deg) translate(250px) rotate(-180deg);
+    }
+    100% {
+        transform: rotate(540deg) translate(250px) rotate(-540deg);
+    }
+}
+@keyframes item5 {
+    0% {
+        transform: rotate(240deg) translate(250px) rotate(-240deg);
+    }
+    100% {
+        transform: rotate(600deg) translate(250px) rotate(-600deg);
+    }
+}
+@keyframes item6 {
+    0% {
+        transform: rotate(300deg) translate(250px) rotate(-300deg);
+    }
+    100% {
+        transform: rotate(660deg) translate(250px) rotate(-660deg);
+    }
+}
+
+@keyframes item7 {
+    0% {
+        transform: rotate(360deg) translate(100px) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translate(100px) rotate(-0deg);
+    }
+}
+
+@keyframes item8 {
+    0% {
+        transform: rotate(360deg) translateY(100px) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translateY(100px) rotate(-0deg);
+    }
+}
+
+@keyframes item9 {
+    0% {
+        transform: rotate(360deg) translate(-100px) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translate(-100px) rotate(-0deg);
+    }
+}
+
+@keyframes item10 {
+    0% {
+        transform: rotate(360deg) translateY(-100px) rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg) translateY(-100px) rotate(-0deg);
+    }
+}
